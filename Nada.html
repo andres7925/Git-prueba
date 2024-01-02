@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+<script type="text/javascript" data-description="sourcepoint stub code">
+    !function () { var e = function () { var e, t = "__tcfapiLocator", a = [], n = window; for (; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (!function e() { var a = n.document, r = !!n.frames[t]; if (!r) if (a.body) { var i = a.createElement("iframe"); i.style.cssText = "display:none", i.name = t, a.body.appendChild(i) } else setTimeout(e, 5); return !r }(), n.__tcfapi = function () { for (var e, t = arguments.length, n = new Array(t), r = 0; r < t; r++)n[r] = arguments[r]; if (!n.length) return a; if ("setGdprApplies" === n[0]) n.length > 3 && 2 === parseInt(n[1], 10) && "boolean" == typeof n[3] && (e = n[3], "function" == typeof n[2] && n[2]("set", !0)); else if ("ping" === n[0]) { var i = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof n[2] && n[2](i) } else a.push(n) }, n.addEventListener("message", (function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, (function (a, r) { var i = { __tcfapiReturn: { returnValue: a, success: r, callId: n.callId } }; t && (i = JSON.stringify(i)), e.source.postMessage(i, "*") }), n.parameter) }), !1)) }; "undefined" != typeof module ? module.exports = e : e() }();
+</script>
+<script data-description="sourcepoint configuration">
+window._sp_ = {
+    config: {"accountId":1254,"propertyId":22046,"gdpr":{"consentLanguage":"es","targetingParams":{"acps":"false"}},"baseEndpoint":"https://cdn.privacy-mgmt.com","isSPA":true,"cpPropertyId":"3e194dda"}}
+</script>
+<script src="https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js" async></script>
+
+<script type="text/javascript" data-description="contentpass integration">
+    (function() {
+        var cpBaseUrl = 'https://cp.transfermarkt.co';
+        var cpController = cpBaseUrl + '/now.js';
+        var cpPropertyId = '3e194dda';
+
+        !function(C,o,n,t,P,a,s){C['CPObject']=n;C[n]||(C[n]=function(){
+        (C[n].q=C[n].q||[]).push(arguments)});C[n].l=+new Date;a=o.createElement(t);
+        s=o.getElementsByTagName(t)[0];a.src=P;s.parentNode.insertBefore(a,s)}
+        (window,document,'cp','script',cpController);
+
+        !function(C,o,n,t,P){if(!C[n].patched){cp('extension','authenticate');P=C[n].q.push;
+        C[n].q.push=function(a){if(a[0]==='authenticate'){if((o['cookie']||'').indexOf('_cpauthhint=')===-1&&
+        !(C['localStorage']||{})['_cpuser']&&C.location.href.toLowerCase().indexOf('cpauthenticated')===-1){
+        t={isLoggedIn:function(){return false;},hasValidSubscription:function(){return false;}};
+        (typeof a[1]==='function'&&a[1](null,t));C[n].afp=true;P.apply(C[n].q,[['authenticate',null]]);
+        return t;}}P.apply(C[n].q,[a]);}}}
+        (window,document,'cp',false);
+
+        cp('create', cpPropertyId, {
+        baseUrl: cpBaseUrl
+        });
+
+        cp('render', {
+        onFullConsent: function() {
+            console.log('[DEMO] onFullConsent');
+        }
+        })
+    })()
+</script>
+
+<script type="text/javascript" data-description="contentpass sourcepoint fast path">
+(function () {
+    cp('authenticate', function(err, user) {
+        if (err || (!user.isLoggedIn() && !user.hasValidSubscription())) {
+        console.log('[SPCP] Taking fast path');
+        (function spExecMsg() {
+            if (window._sp_ && window._sp_.executeMessaging) {
+            if (!window._sp_.config.isSPA) {
+                console.warn('[SPCP] Sourcepoint not in SPA mode!');
+            } else if (window._sp_.version) {
+                console.log('[SPCP] Sourcepoint already running');
+            } else {
+                console.log('[SPCP] Starting Sourcepoint');
+                window._sp_.executeMessaging();
+            }
+            } else {
+            console.log('[SPCP] Sourcepoint not loaded yet. Retrying.');
+            setTimeout(spExecMsg, 10);
+            }
+        })();
+        }
+    });
+    })();
+</script>
+    <meta charset="utf-8" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="192x192" href="/android-chrome-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
+<meta name="description" content="Transfermarkt: Base de datos con más de 1.000.000 de jugadores, 2.000.000 de partidos, más de 100.000 clubes, valores de mercado, agentes y mucho más" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://tmssl.akamaized.net/images/tm_logo.png" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="Fichajes de fútbol, rumores, valores de mercado y noticias" />
+<meta property="og:url" content="https://www.transfermarkt.co/" />
+<link hreflang="de" rel="alternate" href="https://www.transfermarkt.de/" />
+<link hreflang="de-LU" rel="alternate" href="https://www.transfermarkt.de/" />
+<link hreflang="de-AT" rel="alternate" href="https://www.transfermarkt.at/" />
+<link hreflang="de-CH" rel="alternate" href="https://www.transfermarkt.ch/" />
+<link hreflang="tr" rel="alternate" href="https://www.transfermarkt.com.tr/" />
+<link hreflang="it-CH" rel="alternate" href="https://www.transfermarkt.it/" />
+<link hreflang="it" rel="alternate" href="https://www.transfermarkt.it/" />
+<link hreflang="pl" rel="alternate" href="https://www.transfermarkt.pl/" />
+<link hreflang="en-GB" rel="alternate" href="https://www.transfermarkt.co.uk/" />
+<link hreflang="en-IE" rel="alternate" href="https://www.transfermarkt.co.uk/" />
+<link hreflang="es" rel="alternate" href="https://www.transfermarkt.es/" />
+<link hreflang="es-ES" rel="alternate" href="https://www.transfermarkt.es/" />
+<link hreflang="es-CL" rel="alternate" href="https://www.transfermarkt.es/" />
+<link hreflang="es-VE" rel="alternate" href="https://www.transfermarkt.es/" />
+<link hreflang="es-EC" rel="alternate" href="https://www.transfermarkt.es/" />
+<link hreflang="es-CU" rel="alternate" href="https://www.transfermarkt.es/" />
+<link hreflang="nl" rel="alternate" href="https://www.transfermarkt.nl/" />
+<link hreflang="pt" rel="alternate" href="https://www.transfermarkt.pt/" />
+<link hreflang="ru" rel="alternate" href="https://www.transfermarkt.world/" />
+<link hreflang="world" rel="alternate" href="https://www.transfermarkt.world/" />
+<link hreflang="fr-CH" rel="alternate" href="https://www.transfermarkt.fr/" />
+<link hreflang="fr" rel="alternate" href="https://www.transfermarkt.fr/" />
+<link hreflang="fr-CA" rel="alternate" href="https://www.transfermarkt.fr/" />
+<link hreflang="fr-CI" rel="alternate" href="https://www.transfermarkt.fr/" />
+<link hreflang="fr-LU" rel="alternate" href="https://www.transfermarkt.fr/" />
+<link hreflang="fr-BE" rel="alternate" href="https://www.transfermarkt.fr/" />
+<link hreflang="pt-BR" rel="alternate" href="https://www.transfermarkt.com.br/" />
+<link hreflang="en-US" rel="alternate" href="https://www.transfermarkt.us/" />
+<link hreflang="en-CA" rel="alternate" href="https://www.transfermarkt.us/" />
+<link hreflang="en-IN" rel="alternate" href="https://www.transfermarkt.co.in/" />
+<link hreflang="en-ZA" rel="alternate" href="https://www.transfermarkt.co.za/" />
+<link hreflang="x-default" rel="alternate" href="https://www.transfermarkt.com/" />
+<link hreflang="en" rel="alternate" href="https://www.transfermarkt.com/" />
+<link hreflang="nl-BE" rel="alternate" href="https://www.transfermarkt.be/" />
+<link hreflang="ro" rel="alternate" href="https://www.transfermarkt.ro/" />
+<link hreflang="el-GR" rel="alternate" href="https://www.transfermarkt.gr/" />
+<link hreflang="ko-KR" rel="alternate" href="https://www.transfermarkt.co.kr/" />
+<link hreflang="es-AR" rel="alternate" href="https://www.transfermarkt.com.ar/" />
+<link hreflang="es-MX" rel="alternate" href="https://www.transfermarkt.mx/" />
+<link hreflang="es-CO" rel="alternate" href="https://www.transfermarkt.co/" />
+<link hreflang="es-PE" rel="alternate" href="https://www.transfermarkt.pe/" />
+<link hreflang="ms" rel="alternate" href="https://www.transfermarkt.my/" />
+<link hreflang="ja" rel="alternate" href="https://www.transfermarkt.jp/" />
+<link hreflang="id" rel="alternate" href="https://www.transfermarkt.co.id/" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/menue.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-main.min.css?lm=1702030136" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main_desktop.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/print.css?_sn=1?lm=1702030184" media="print" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/chosen.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/swiper.min_neu.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/startseite_teaserBox.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/startseite.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/startseite_newsRotationWidget.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/startseite_mostWantedWidget.css?lm=1702030184" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/newsUpdateLayer.css?lm=1702030184" />
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/vendor/jquery.min.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/swiper.min.3.4.1.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom-elements/ce-competition-intersection-observer.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/startseite.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/main.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.ajaxaddition.jquery.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/functions.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/main_desktop.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.jquery.js?lm=1702030165"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+    var oddsServe = function(placement,competition,match,node) {
+        if (!node){
+            var s=document.readyState==='loading'?document.getElementsByTagName('script'):[];
+            node=s.length?s[s.length-1].parentNode:null;
+        }
+        oddsServe.queue.push({contentUnitId:placement,competition:competition,match:match,node:node});
+    }
+    
+    oddsServe.onInit=function(callbacks){
+        if (typeof window.__tcfapi === 'function') {
+            __tcfapi('addEventListener', 2, function(tcdata, success) {
+                let tcf20compatibleString;
+                if(success) {
+                    if (tcdata.eventStatus === 'useractioncomplete') {
+                        tcf20compatibleString = tcdata.tcString;
+                    } else if (tcdata.eventStatus === 'tcloaded') {
+                        tcf20compatibleString = tcdata.tcString;
+                    }
+                    callbacks.setGdprOptions({
+                        gdpr:1,
+                        gdpr_pd:1,
+                        gdpr_consent:tcf20compatibleString,
+                    });
+                }
+            });
+        } else {
+            console.warn('E2: __tcfapi not found');
+        }
+    };
+    oddsServe.options={gdpr_wait:true};
+    oddsServe.queue=[];
+/*]]>*/
+</script>
+<title>Fichajes de fútbol, rumores, valores de mercado y noticias | Transfermarkt</title>
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-152x152.png">
+            <link rel="preload" href="//data-84a0f3455d.transfermarkt.co/iomm/latest/manager/base/es6/bundle.js" as="script" id="IOMmBundle">
+        <link rel="preload" href="//data-84a0f3455d.transfermarkt.co/iomm/latest/bootstrap/loader.js" as="script">
+        <script type="text/javascript" src="//data-84a0f3455d.transfermarkt.co/iomm/latest/bootstrap/loader.js"></script>
+    
+<script type="text/javascript">
+   tmData = {
+       loggedIn : "0",
+       tmTraffic: "0",
+   };
+</script>
+<script>// Set to the same value as the web property used on the site
+		var gaProperty = 'UA-3816204-13';
+
+		// Disable tracking if the opt-out cookie exists.
+		var disableStr = 'ga-disable-' + gaProperty;
+		if (document.cookie.indexOf(disableStr + '=true') > -1) {
+			window[disableStr] = true;
+		}
+
+		// Opt-out function
+		function gaOptout() {
+			document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+			window[disableStr] = true;
+		}</script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); } 
+   gtag('set', 'linker', { 'domains': [/^transfermarkt\.(com|de|nl|it|at|ch|es|fr|com\.tr|pt|tv|pl|co\.uk)$/]});
+   gtag('js', new Date()); 
+   gtag('set',
+  {
+    'custom_map': {
+                    'dimension1': 'loggedIn',
+                    'dimension2': 'tmTraffic'
+                }
+  });
+        gtag('config', 'UA-3816204-13', {
+                'anonymize_ip': true,
+                'transport_type': 'beacon',
+                'content_group1': 'startseite',
+                'content_group2': '',
+                'content_group3': '',
+                'content_group4': '',
+                'loggedIn': tmData.loggedIn,
+                'tmTraffic': tmData.tmTraffic
+            }); 
+   function tmEvent(category, action, label) {
+                if (typeof gtag !== 'function') {
+                    return;
+                }
+                gtag('event',
+                    action,
+                    {
+                        'event_category': category,
+                        'event_label': label
+                    }
+                );
+            }
+
+            function tmTiming(value, name, event_category, event_label) {
+                if (typeof gtag !== 'function') {
+                    return;
+                }
+                gtag('event', 'timing_complete', {
+                    name,
+                    value,
+                    event_category,
+                    event_label
+                });
+            }
+            
+	</script>    <script type="text/javascript" src="https://tmssl.akamaized.net//ads/ads.js"></script>
+    <script type="text/javascript">
+        window.tmGaId = "UA-3816204-13";
+    </script>
+
+    
+    <!-- no Tisoomi -->
+    <div class="werbung werbung-header">
+<!-- Start GPT Tag -->
+                <script>
+                  window.googletag = window.googletag || {cmd: []};
+                  googletag.cmd.push(function() {
+                    googletag.defineSlot("/58778164/Desktop-Billboard-1", [[960, 90], [970, 250], [950, 90], [728, 90], [970, 90]], "div-gpt-ad-1621524903956-0")
+                    .addService(googletag.pubads());
+                    googletag.defineSlot("/58778164/Desktop-MediumRectangle-1", [[300, 250], [336, 280]], "div-gpt-ad-1621526463511-0")
+                    .addService(googletag.pubads());
+                    googletag.defineSlot("/58778164/Desktop-Skyscraper-1", [[160, 600], [336, 280], [300, 250], [300, 600], [120, 600]], "div-gpt-ad-1621527521939-0")
+                    .addService(googletag.pubads());
+                    googletag.defineSlot("/58778164/Desktop-MediumRectangle-2", [[336, 280], [300, 250]], "div-gpt-ad-1621528018930-0")
+                    .addService(googletag.pubads());
+                    googletag.defineSlot("/58778164/Desktop-Skyscraper-2",  [[300, 250], [336, 280], [160, 600], [300, 600], [120, 600]], "div-gpt-ad-1621528123398-0")
+                    .addService(googletag.pubads());
+                    googletag.defineSlot("/58778164/Desktop-Billboard-2",  [[950, 90], [970, 250], [728, 90], [970, 90], [960, 90], [300, 250]], "div-gpt-ad-1621528173524-0")
+                    .addService(googletag.pubads());
+                    googletag.defineSlot("/58778164/Desktop-Gallerie-1", [[300, 250], [336, 280]], "div-gpt-ad-1692265974586-0")
+                     .addService(googletag.pubads());
+                     googletag.pubads().enableLazyLoad({
+                        fetchMarginPercent: 500,
+                        renderMarginPercent: 200,
+                        mobileScaling: 2.0});
+                    googletag.pubads().setCentering(true);
+                    googletag.pubads().disableInitialLoad();
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().setTargeting("cg1", ["startseite"]);
+                    googletag.pubads().setTargeting("URL", "www.transfermarkt.co");
+                    googletag.enableServices();
+                  });
+                </script>
+                <!-- End GPT Tag -->
+</div></head>
+
+<body class="" itemscope itemtype="http://schema.org/WebPage" data-tm-tld="co" data-cmp-layer-id="910070">
+    
+                <tm-language-hint></tm-language-hint>
+        <div id="main">
+        <div class="werbung-skyscraper-container">
+            <div class="werbung werbung-skyscraper"><div id="div-gpt-ad-1621527521939-0"style="min-width: 160px; min-height: 250px;"></div>
+<script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621527521939-0"); });</script>
+</div>        </div>
+
+        <div class="werbung-skyscraperbtf-container">
+            <div class="werbung werbung-skyscraperbtf"><div id="div-gpt-ad-1621528123398-0"style="min-width: 160px; min-height: 250px;"></div>
+<script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621528123398-0"); });</script>
+</div>        </div>
+        
+        <header class="tm-header">
+                            <div class="tm-header__box ">
+                                            <a href="/">
+                            <img class="icon-logo" src="https://tmsi.akamaized.net/head/transfermarkt_logo.svg" height="62" width="156" title="Transfermarkt" alt="Transfermarkt">
+                        </a>
+                                                                <tm-domainswitcher open-list="false" tld="co"></tm-domainswitcher>
+                                            <div class="tm-header__social-box">
+                        <a href="https://www.facebook.com/Transfermarkt.co" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Facebook');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/fb_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="https://twitter.com/TMes_news" target="_blank" class="header__social-link header__social-link--twitter" onclick="tmEvent('SM-Icons_Header','click','Twitter');
+">
+                     <img src="https://tmsi.akamaized.net/icons/socialMedia/twitter.svg" width="20" height="20" class="header__icon header__icon--twitter">
+                </a>
+                <a href="http://instagram.com/transfermarkt_official" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Instagram');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/instagram_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="/intern/rssguide" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','RSS');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/rss_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="https://www.tiktok.com/@transfermarkt" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Tiktok');
+">
+                    <img src="https://tmsi.akamaized.net/icons/tiktokRebrush.svg" width="20" height="20" class="header__icon">
+                </a>
+                    </div>
+                            <div class="tm-header__input-wrapper " id="schnellsuche-platz">
+                            <form name="schnellsuche" id="schnellsuche" class="tm-header__form" action="/schnellsuche/ergebnis/schnellsuche">
+                                <input type="text" name="query" class="tm-header__input--search-field" onClick="" placeholder="Introducir término (p.ej. jugador, club,...)" autocorrect="off" spellcheck="false" value="" />
+                                <input type="submit" value="" class="tm-header__input--search-send" alt="Buscar" />
+                            </form>
+                            <a href="/detailsuche/spielerdetail/suche" title="Acceder a la búsqueda detallada" id="detailsuche-head" class="tm-header__search-detail">
+                                <img src="https://tmsi.akamaized.net/icons/search_icon_plus_blue_white.svg" alt="search" class="tm-header__icon-detail-search" height="26" width="26">
+                            </a>
+                        </div>
+                                    </div>
+            
+            <nav class="main-navbar navihalter">
+                                                                        <ul class="main-navbar__container megamenu_dark_bar megamenu_dark" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                    <a href="/" class="sticky-logo hide-for-small">
+                <span title="Transfermarkt" class="tm_svg"></span>
+            </a>
+            
+    <li class="main-navbar__list" data-nav-group="news">
+                <span
+            class="main-navbar__list-title tm-main-nav-el"
+            onClick="tmEvent('News','click','menu');
+"
+            >
+            Noticias        </span>
+                    <div class="main-navbar__drop-down">
+                                    <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                                </div>
+        
+    <li class="main-navbar__list" data-nav-group="transfers">
+                <span
+            class="main-navbar__list-title tm-main-nav-el"
+            onClick="tmEvent('Transfers & Gerüchte','click','menu');
+"
+            >
+            Fichajes & rumores        </span>
+                    <div class="main-navbar__drop-down">
+                                    <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                                </div>
+        
+    <li class="main-navbar__list" data-nav-group="marktwerte">
+                <span
+            class="main-navbar__list-title tm-main-nav-el"
+            onClick="tmEvent('Marktwerte','click','menu');
+"
+            >
+            Valores de mercado        </span>
+                    <div class="main-navbar__drop-down">
+                                    <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                                </div>
+        
+    <li class="main-navbar__list" data-nav-group="wettbewerbe">
+                <span
+            class="main-navbar__list-title tm-main-nav-el"
+            onClick="tmEvent('Wettbewerbe','click','menu');
+"
+            >
+            Competiciones        </span>
+                    <div class="main-navbar__drop-down">
+                                    <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                                </div>
+        
+    <li class="main-navbar__list" data-nav-group="foren">
+                <span
+            class="main-navbar__list-title tm-main-nav-el"
+            onClick="tmEvent('Foren','click','menu');
+"
+            >
+            Foros        </span>
+                    <div class="main-navbar__drop-down">
+                                    <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                                </div>
+        
+    <li class="main-navbar__list" data-nav-group="meintm">
+                <span
+            class="main-navbar__list-title tm-main-nav-el"
+            onClick="tmEvent('MeinTM','click','menu');
+"
+            >
+            Mi TM        </span>
+                    <div class="main-navbar__drop-down">
+                                    <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                                </div>
+        
+    <li class="main-navbar__list" >
+                <a
+            class="main-navbar__list-title tm-main-nav-el live-navilink"
+            href="/ticker/index/live"
+            onClick="tmEvent('Live','click','menu');
+"
+            >
+            En vivo                            <tm-live-match-counter auto-request="true" content='["Partido en vivo", "Partidos en directo"]'></tm-live-match-counter>
+                    </a>
+            </li>
+</ul>
+
+                
+                <form name="schnellsuche" id="schnellsuche-sticky" class="noclose sticky-suche" action="/schnellsuche/ergebnis/schnellsuche">
+                    <input type="text" name="query" class="header-suche" onClick="" placeholder="Introducir término (p.ej. jugador, club,...)" />
+                    <input type="image" class="header-suche-abschicken" src="https://tmssl.akamaized.net//images/suchicon.png" alt="Buscar" />
+                </form>
+                <a href="/detailsuche/spielerdetail/suche" title="Acceder a la búsqueda detallada" id="detailsuche-head" class="header-suche-detailsuche">
+                    <span class="icon-detailsuche"></span>
+                </a>
+                                    <a id="arrow-up-xy" href="#">
+                        <svg style="fill: white; width: 20px; height: 20px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                            <g>
+                                <path d="M78.016,49.132L51.961,12.714c-0.471-0.66-1.233-1.049-2.043-1.051c-0.006,0-0.006,0-0.006,0
+                                c-0.815,0.002-1.575,0.396-2.048,1.059L21.977,49.14c-0.546,0.767-0.616,1.776-0.183,2.612c0.426,0.835,1.292,1.361,2.236,1.361
+                                h12.183l-0.001,32.709c0,1.39,1.125,2.515,2.516,2.515l22.541-0.001c1.389,0.001,2.515-1.124,2.516-2.517l0-32.705h12.187
+                                c0.94,0,1.803-0.53,2.237-1.367C78.641,50.911,78.566,49.9,78.016,49.132z" />
+                            </g>
+                        </svg>
+                    </a>
+                <div class="tm-login " id="login" onClick="tmEvent('login','click','sign_in_button');
+">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     fill="#FFF" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="tm-login__image">
+        <g>
+            <path d="M80.161,60.441l-15.66-7.47l-6.622-3.159c2.892-1.822,5.241-4.634,6.778-8.022c1.22-2.69,1.946-5.734,1.946-8.99
+                c0-1.827-0.29-3.562-0.694-5.236C63.94,19.453,57.605,13.477,50,13.477c-7.461,0-13.701,5.763-15.792,13.645
+                c-0.482,1.808-0.815,3.688-0.815,5.68c0,3.459,0.808,6.684,2.181,9.489c1.587,3.254,3.94,5.937,6.804,7.662l-6.342,2.953
+                l-16.168,7.53c-1.404,0.658-2.327,2.242-2.327,4.011v15.062v2.703c0,2.381,1.659,4.312,3.708,4.312h57.505
+                c2.048,0,3.708-1.93,3.708-4.312v-2.703V64.446C82.46,62.683,81.552,61.114,80.161,60.441z"/>
+        </g>
+    </svg>
+    <span class="tm-login__cta">
+        Iniciar sesión    </span>
+</div>
+            </nav>
+
+            
+            <div class="quick-select-wrapper">
+    <div id="quickselect-skeleton" class="ssc" style="height: 40px;">
+        <div class="ssc-wrapper flex" style="height: 100%; padding: 0">
+            <div class="ssc-square quickselect-element" style="width: 40px;"></div>
+            <div class="ssc-square quickselect-element quickselect-selector" style="width: 171.06px;"></div>
+            <div class="ssc-square quickselect-element quickselect-selector" style="width: 170.84px;"></div>
+            <div class="ssc-square quickselect-element quickselect-selector" style="width: 138.03px;"></div>
+            <div class="ssc-square quickselect-element quickselect-selector" style="width: 141.5px;"></div>
+        </div>
+    </div>
+
+    <tm-quick-select-bar
+        default-country="83"
+        default-competition=""
+        default-club=""
+        default-player=""
+        dropdown-visible=""
+        translations='{&quot;home&quot;:&quot;Inicio&quot;,&quot;country&quot;:&quot;Pa\u00eds&quot;,&quot;competition&quot;:&quot;Competici\u00f3n &quot;,&quot;club&quot;:&quot;Club&quot;,&quot;player&quot;:&quot;Jugadores&quot;,&quot;attack&quot;:&quot;Delantero&quot;,&quot;midfield&quot;:&quot;Centrocampista&quot;,&quot;defense&quot;:&quot;Defensa&quot;,&quot;goalkeeper&quot;:&quot;Portero&quot;}'
+        >
+    </tm-quick-select-bar>
+</div>
+
+
+            <div class="werbung werbung-billboard"><div id="div-gpt-ad-1621524903956-0"style="min-width: 728px; min-height: 90px;"></div>
+<script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621524903956-0"); });</script>
+</div>        </header>
+        <main>
+
+            
+            
+            <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Transfermarkt",
+        "url": "https://www.transfermarkt.co",
+        "logo": "https://tmsi.akamaized.net/head/transfermarkt_logo.svg"
+    }
+</script>
+<div id="startseite">
+    <h1>Transfermarkt - El portal de fútbol con fichajes, valores de mercado, rumores y estadísticas</h1>
+    <!-- key_0_set_spotlight-->
+<div class="row padding shadow">
+    <div id="spotlight" class="large-12 columns small-12 spotlight-mobile">
+
+                    <div class="direct-headline viewport-tracking"
+                 data-viewport="Spotlight">
+                <div class="direct-headline__header-box">
+                <h2 class="direct-headline__header direct-headline__header--highlight-blue">
+                    <a class="direct-headline__link"
+                       href="/aktuell/newsarchiv"
+                       name="hp_setId1_setPos0_kategorie">
+                        Destacado                    </a>
+                </h2>
+                                    <span class="direct-headline__span">
+                        Recomendaciones de andres                    </span>
+                                                <a class="direct-headline__link direct-headline__link--padding direct-headline--breakpoint-element"
+                               href="https://www.transfermarkt.co/liga-dimayor-ii/startseite/wettbewerb/COL1"
+                               name="hp_setId1_setPos0_topLink0">
+                                Estadísticas Liga BetPlay andres felipe                            </a>
+                                                    <a class="direct-headline__link direct-headline__link--padding direct-headline--breakpoint-element"
+                               href="https://www.transfermarkt.co/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/83"
+                               name="hp_setId1_setPos0_topLink1">
+                                Colombianos más valiosos                            </a>
+                                                    <a class="direct-headline__link direct-headline__link--padding direct-headline--breakpoint-element"
+                               href="https://www.transfermarkt.co/spieler-statistik/wertvollstespieler/marktwertetop/mw"
+                               name="hp_setId1_setPos0_topLink2">
+                                Más valiosos del mundo                            </a>
+                                                        </div>
+            </div>
+                </div>
+
+    <div class="large-8 columns large-collapse small-12">
+        <div class="row no-margin-top">
+            <div class="large-12 columns small-12">
+                <div class="swiper-container news-slider" id="swiper-newsRotation">
+    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/copa-america-brasil-vs-colombia-el-partido-mas-valioso-argentina-gran-favorita-al-titulo/view/news/431029"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos0', 'Copa_America_Brasil_vs_Colombia_el_partido_mas_valioso_Argentina_gran_favorita_al_ttulo');"
+                >
+                    <div class="slider-foto swiper-lazy" style="background-image: url(https://tmssl.akamaized.net/images/foto/homepage/lionel-messi-argentinien-copa-america-2021-1625987605-67023.jpg?lm=1625987616)"></div>                        <div class="quelle"><span>&copy</span>&nbsp;IMAGO</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">¡Fase de grupos lista!</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/logo/homepageNewsLogo160x160/cam4.png?lm=1625681899" title="Copa América 2024" alt="Copa América 2024" class="swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Copa América: Brasil vs. Colombia, el partido más valioso. Argentina, gran favorita al título                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/valores-de-mercado-liga-betplay-mier-reclama-el-liderato-y-portilla-se-une-al-top/view/news/430978"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos1', 'Valores_de_mercado_Liga_BetPlay_Mier_reclama_el_liderato_y_Portilla_se_une_al_top');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/liga-betplay-spotlight-1701955406-123468.jpeg?lm=1701955410"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Transfermarkt</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">Actualización completa</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/logo/homepageNewsLogo160x160/col1.png?lm=1630312566" title="Liga Dimayor Finalización" alt="Liga Dimayor Finalización" class="swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Valores de mercado Liga BetPlay: Mier reclama el liderato y Portilla se une al top                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/deiber-caicedo-se-repotencia-y-entra-al-top-mas-valioso-iquest-la-mayor-joya-ofensiva-del-fpc-/view/news/431024"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos2', 'Deiber_Caicedo_se_repotencia_y_entra_al_top_mas_valioso_La_mayor_joya_ofensiva_del_FPC');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/deiber-caicedo-1701964762-123488.jpg?lm=1701964771"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Vizzor Image</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">Valores Liga BetPlay</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageNewsLogo160x160/11854.png?lm=1640855755" title="11854.png" alt="11854.png" class="swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Deiber Caicedo se repotencia y entra al top más valioso: ¿La mayor joya ofensiva del FPC?                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/chelsea-fuera-de-los-30-equipos-en-mejor-forma-pochettino-el-mas-gastador-en-una-sola-campana/view/news/431021"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos3', 'Chelsea_fuera_de_los_30_equipos_en_mejor_forma_Pochettino_el_mas_gastador_en_una_sola_campaa');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/chelsea-manager-mauricio-pochettino-1698505354-120657.jpg?lm=1698505370"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Imago/Content stadium</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">Gasto récord en fichajes</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageNewsLogo160x160/631.png?lm=1682435911" title="631.png" alt="631.png" class="swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Chelsea, fuera de los 30 equipos en mejor forma: Pochettino, el más gastador en una sola campaña                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/millonarios-en-busca-de-un-nuevo-goleador-iquest-leonardo-castro-no-es-suficiente-como-figura-/view/news/430971"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos4', 'Millonarios_en_busca_de_un_nuevo_goleador_Leonardo_Castro_no_es_suficiente_como_figura');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/dc-millonarios-spot-1701877165-123350.png?lm=1701877182"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Transfermarkt</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">Sabbag, opción principal</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageNewsLogo160x160/2350.png?lm=1644878652" title="2350.png" alt="2350.png" class="swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Millonarios, en busca de un nuevo goleador: ¿Leonardo Castro no es suficiente como figura?                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/colombia-se-cura-en-salud-con-poveda-y-tanton-iquest-como-les-ha-ido-durante-la-23-24-/view/news/430912"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos5', 'Colombia_se_cura_en_salud_con_Poveda_y_Tanton_Cmo_les_ha_ido_durante_la_2324');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/ian-poveda-devan-tanton-colombia-1701791311-123234.png?lm=1701791328"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Transfermarkt</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">Convocados por Lorenzo</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/homepageNewsLogo160x160/83.png?lm=1520611569" title="83.png" alt="83.png" class="nmFlagge swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Colombia se cura en salud con Poveda y Tanton: ¿Cómo les ha ido durante la 23/24?                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/neymar-y-coutinho-los-fichajes-mas-rentables-de-la-historia-cuatro-sudamericanos-en-el-top/view/news/430872"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos6', 'Neymar_y_Coutinho_los_fichajes_mas_rentables_de_la_historia_cuatro_sudamericanos_en_el_top');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/fichajes-mas-rentables-1701705342-123144.png?lm=1701705367"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Transfermarkt</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">Barcelona, mayor comprador </span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="https://tmssl.akamaized.net//images/startseite/spotlightDefault.png" height="72" width="72"/>                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            Neymar y Coutinho, los fichajes más rentables de la historia: cuatro sudamericanos en el top                        </div>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="newsslider-hauptlink"
+                   href="/-iexcl-vota-por-el-mvp-de-la-liga-betplay-2023-mier-llinas-portilla-y-mas-nominados/view/news/430625"
+                   onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId2_widPos0_contentPos7', 'Vota_por_el_MVP_de_la_Liga_BetPlay_2023_Mier_Llinas_Portilla_y_mas_nominados');"
+                >
+                    <div class="slider-foto swiper-lazy" data-background="https://tmssl.akamaized.net/images/foto/homepage/spotlight-mvp-colombia-1701104125-122666.jpeg?lm=1701104130"></div>                        <div class="quelle"><span>&copy</span>&nbsp;Transfermarkt</div>
+                                                                <div class="newsHeadlineBackground">&nbsp;</div>
+                    <div class="newsSubline">
+                        <span class="text">24 nominados</span>
+                                            </div>
+                    <div class="newsWappen">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/logo/homepageNewsLogo160x160/col1.png?lm=1630312566" title="Liga Dimayor Finalización" alt="Liga Dimayor Finalización" class="swiper-lazy" />                    </div>
+                    <div class="newsHeadline">
+                        <div class="news-big-headline">
+                            ¡Vota por el MVP de la Liga BetPlay 2023! Mier, Llinás, Portilla y más nominados                        </div>
+                    </div>
+                </a>
+            </div>
+                </div>
+            <div class="swiper-pagination "></div>
+            <div class="go-prev-newsslider">
+        <div class="pfeil-container-links ">
+            <div class="pfeil links-pfeil">
+                <div class="pfeil-section links-skew pfeil-top"></div>
+                <div class="pfeil-section rechts-skew pfeil-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="go-next-newsslider">
+        <div class="pfeil-container-rechts ">
+            <div class="pfeil rechts-pfeil">
+                <div class="pfeil-section rechts-skew pfeil-top"></div>
+                <div class="pfeil-section links-skew pfeil-bottom"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="large-4 columns large-collapse small-12">
+            <div id="home-rectangle-spotlight" class="large-12 columns" onclick="tmEvent('werbung','click','startseite_spotlight');">
+                <tm-consent type="pubmatic" no-checkbox embed="PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPgogICAgICAgICAgICB2YXIgUFdUPXt9OyAvL0luaXRpYWxpemUgTmFtZXNwYWNlCiAgICAgICAgICAgIHZhciBnb29nbGV0YWcgPSBnb29nbGV0YWcgfHwge307CiAgICAgICAgICAgIGdvb2dsZXRhZy5jbWQgPSBnb29nbGV0YWcuY21kIHx8IFtdOwogICAgICAgICAgICB2YXIgZ3B0UmFuID0gZmFsc2U7CiAgICAgICAgICAgIFBXVC5qc0xvYWRlZCA9IGZ1bmN0aW9uKCl7IC8vUHViTWF0aWMgcHd0LmpzIG9uIGxvYWQgY2FsbGJhY2sgaXMgdXNlZCB0byBsb2FkIEdQVAogICAgICAgICAgICAgICAgbG9hZEdQVCgpOwogICAgICAgICAgICB9OwogICAgICAgICAgICB2YXIgbG9hZEdQVCA9IGZ1bmN0aW9uKCkgewogICAgICAgICAgICAgICAgLy8gQ2hlY2sgdGhlIGdwdFJhbiBmbGFnCiAgICAgICAgICAgICAgICBpZiAoIWdwdFJhbikgewogICAgICAgICAgICAgICAgICAgIGdwdFJhbiA9IHRydWU7CiAgICAgICAgICAgICAgICAgICAgdmFyIGdhZHMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICAgICAgICAgICAgICB2YXIgdXNlU1NMID0gJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2w7CiAgICAgICAgICAgICAgICAgICAgZ2Fkcy5zcmMgPSAodXNlU1NMID8gJ2h0dHBzOicgOiAnaHR0cDonKSArICcvL3NlY3VyZXB1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC90YWcvanMvZ3B0LmpzJzsKICAgICAgICAgICAgICAgICAgICB2YXIgbm9kZSA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgICAgICAgICAgICAgICAgICBub2RlLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhZHMsIG5vZGUpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9OwogICAgICAgICAgICAvLyBGYWlsc2FmZSB0byBjYWxsIGdwdAogICAgICAgICAgICBzZXRUaW1lb3V0KGxvYWRHUFQsIDUwMCk7CiAgICAgICAgPC9zY3JpcHQ+CiAgICAgICAgPHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPgogICAgICAgICAgICAoZnVuY3Rpb24oKSB7CiAgICAgICAgICAgICAgICB2YXIgcHVybCA9IHdpbmRvdy5sb2NhdGlvbi5ocmVmOwogICAgICAgICAgICAgICAgdmFyIHVybCA9ICcvL2Fkcy5wdWJtYXRpYy5jb20vQWRTZXJ2ZXIvanMvcHd0LzE2MzIyOS8xMDEwMyc7CiAgICAgICAgICAgICAgICB2YXIgcHJvZmlsZVZlcnNpb25JZCA9ICcnOwogICAgICAgICAgICAgICAgaWYocHVybC5pbmRleE9mKCdwd3R2PScpPjApewogICAgICAgICAgICAgICAgICAgIHZhciByZWdleHAgPSAvcHd0dj0oLio/KSgmfCQpL2c7CiAgICAgICAgICAgICAgICB2YXIgbWF0Y2hlcyA9IHJlZ2V4cC5leGVjKHB1cmwpOwogICAgICAgICAgICAgICAgaWYobWF0Y2hlcy5sZW5ndGggPj0gMiAmJiBtYXRjaGVzWzFdLmxlbmd0aCA+IDApewogICAgICAgICAgICAgICAgICAgIHByb2ZpbGVWZXJzaW9uSWQgPSAnLycrbWF0Y2hlc1sxXTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgdmFyIHd0YWRzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgICAgICAgICB3dGFkcy5hc3luYyA9IHRydWU7CiAgICAgICAgICAgICAgICB3dGFkcy50eXBlID0gJ3RleHQvamF2YXNjcmlwdCc7CiAgICAgICAgICAgICAgICB3dGFkcy5zcmMgPSB1cmwrcHJvZmlsZVZlcnNpb25JZCsnL3B3dC5qcyc7CiAgICAgICAgICAgICAgICB2YXIgbm9kZSA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgICAgICAgICAgICAgIG5vZGUucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUod3RhZHMsIG5vZGUpOwogICAgICAgICAgICB9KSgpOwogICAgICAgIDwvc2NyaXB0PgogICAgICAgIA=="></tm-consent><tm-consent no-checkbox type="googleadvertising" embed="PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vc2VjdXJlcHViYWRzLmcuZG91YmxlY2xpY2submV0L3RhZy9qcy9ncHQuanMiPjwvc2NyaXB0Pg=="></tm-consent><tm-consent type="amazonadvertising" no-checkbox embed="PHNjcmlwdD4hZnVuY3Rpb24odCwkLGUscyxpLGEsbyl7JFt0XXx8KCRbdF09e2luaXQ6ZnVuY3Rpb24oKXtfKCJpIixhcmd1bWVudHMpfSxmZXRjaEJpZHM6ZnVuY3Rpb24oKXtfKCJmIixhcmd1bWVudHMpfSxzZXREaXNwbGF5QmlkczpmdW5jdGlvbigpe30sdGFyZ2V0aW5nS2V5czpmdW5jdGlvbigpe3JldHVybltdfSxfUTpbXX0sKGE9ZS5jcmVhdGVFbGVtZW50KHMpKS5hc3luYz0hMCxhLnNyYz1pLChvPWUuZ2V0RWxlbWVudHNCeVRhZ05hbWUocylbMF0pLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsbykpO2Z1bmN0aW9uIF8oZSxzKXskW3RdLl9RLnB1c2goW2Usc10pfX0oImFwc3RhZyIsd2luZG93LGRvY3VtZW50LCJzY3JpcHQiLCIvL2MuYW1hem9uLWFkc3lzdGVtLmNvbS9hYXgyL2Fwc3RhZy5qcyIpLGFwc3RhZy5pbml0KHtwdWJJRDoiNTEzNCIsYWRTZXJ2ZXI6Imdvb2dsZXRhZyJ9KTtjb25zdCBpbml0QW1hem9uQWRCaWRzPSh0LCQpPT57KCQmJiJ0Y2xvYWRlZCI9PT10LmV2ZW50U3RhdHVzfHwidXNlcmFjdGlvbmNvbXBsZXRlIj09PXQuZXZlbnRTdGF0dXMpJiZhcHN0YWcuZmV0Y2hCaWRzKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90czpbCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUyNDkwMzk1Ni0wIixzbG90TmFtZToiNTg3NzgxNjQvRGVza3RvcC1CaWxsYm9hcmQtMSIsc2l6ZXM6W1s5NjAsOTBdLFs5NzAsMjUwXSxbOTUwLDkwXSxbNzI4LDkwXSxbOTcwLDkwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTI2NDYzNTExLTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9EZXNrdG9wLU1lZGl1bVJlY3RhbmdsZS0xIixzaXplczpbWzMwMCwyNTBdLFszMzYsMjgwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTI3NTIxOTM5LTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9EZXNrdG9wLVNreXNjcmFwZXItMSIsc2l6ZXM6W1sxNjAsNjAwXSxbMzM2LDI4MF0sWzMwMCwyNTBdLFszMDAsNjAwXSxbMTIwLCA2MDBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgwMTg5MzAtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtTWVkaXVtUmVjdGFuZ2xlLTIiLHNpemVzOltbMzM2LDI4MF0sWzMwMCwyNTBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgxMjMzOTgtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtU2t5c2NyYXBlci0yIixzaXplczpbWzMwMCwyNTBdLFszMzYsMjgwXSxbMTYwLDYwMF0sWzMwMCw2MDBdLCBbMTIwLCA2MDBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgxNzM1MjQtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtQmlsbGJvYXJkLTIiLHNpemVzOltbOTUwLDkwXSxbOTcwLDI1MF0sWzcyOCw5MF0sWzk3MCw5MF0sWzk2MCw5MF0sIFszMDAsIDI1MF0sXX0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUzNDI4OTI5Ni0wIixzbG90TmFtZToiNTg3NzgxNjQvTW9iaWxlLU1lZGl1bVJlY3RhbmdsZS0xIixzaXplczpbWzMwMCwxMDBdLFszMDAsMjUwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjc5MzQxNDY4MTkzLTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9Nb2JpbGUtTWVkaXVtUmVjdGFuZ2xlLTIiLHNpemVzOltbMzAwLCAyNTBdLCBbMzIwLCA1MF0sIFsyNTAsIDI1MF0sIFszMDAsIDEwMF0sIFszMzYsIDI4MF0sXX0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUzNDM2OTI5NC0wIixzbG90TmFtZToiNTg3NzgxNjQvTW9iaWxlLUhhbGZwYWdlLTEiLHNpemVzOltbMzAwLDYwMF0sWzMwMCwyNTBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MzQ0MzI4MjktMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L01vYmlsZS1TdGlja3kiLHNpemVzOltbMzAwLDUwXSxbMzIwLDUwXSxdfSxdLHRpbWVvdXQ6MmUzfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZnVuY3Rpb24odCl7Z29vZ2xldGFnLmNtZC5wdXNoKGZ1bmN0aW9uKCl7YXBzdGFnLnNldERpc3BsYXlCaWRzKCksZ29vZ2xldGFnLnB1YmFkcygpLnJlZnJlc2goKX0pfSl9OyJmdW5jdGlvbiI9PXR5cGVvZiB3aW5kb3cuX190Y2ZhcGkmJndpbmRvdy5fX3RjZmFwaSgiYWRkRXZlbnRMaXN0ZW5lciIsMixpbml0QW1hem9uQWRCaWRzKTs8L3NjcmlwdD4="></tm-consent><div class="werbung werbung-rectangle1"><div id="div-gpt-ad-1621526463511-0"style="min-width: 300px; min-height: 250px;"></div>
+<script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621526463511-0"); });</script>
+</div>            </div>
+
+            <div class="small-12 columns">
+                <div class="mostWanted">
+    <div class="mostWantedControll">
+        <div class="subline">
+            <h3 class="text">Jugadores más vistos</h3>
+            <div class="go-prev-mostwantedslider"><span></span></div>
+            <div class="go-next-mostwantedslider"><span></span></div>
+        </div>
+    </div>
+            <div class="swiper-container" id="swiper-mostwanted">
+            <div class="swiper-wrapper">
+                                    <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/392763/pos/1/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos0">
+                    <div class="infocontent">
+    <span class="name">
+        <a title="Ian Poveda" data-event="most_wanted_Ian_Poveda" href="/ian-poveda/profil/spieler/392763">Ian Poveda</a>        <img src="https://tmssl.akamaized.net/images/flagge/homepageSmall/83.png?lm=1520611569" title="Colombia" alt="Colombia" class="flaggenrahmen" />    </span>
+    <span class="marktwert">
+        Valor de mercado:
+        <b>900 mil €</b>
+    </span>
+    <span class="verein">
+        <span class="bilderkasten">
+            <a title="Leeds UnitedLeeds United" href="/leeds-united/startseite/verein/399"><img src="https://tmssl.akamaized.net/images/wappen/homepage/399.png?lm=1645652224" title="Leeds United" alt="Leeds United" class="" /></a>        </span> <a title="Leeds United" href="/leeds-united/startseite/verein/399">Leeds</a>    </span>
+    <div class="foto">
+        <img src="https://img.a.transfermarkt.technology/portrait/header/392763-1577961536.jpg?lm=1" title="Ian Poveda" alt="Ian Poveda" class="" />    </div>
+    <div class="rang flexCenter">#1</div>
+</div>
+                    </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/783526/pos/2/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos1">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/745452/pos/3/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos2">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/957461/pos/4/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos3">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/742521/pos/5/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos4">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/417780/pos/6/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos5">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/119235/pos/7/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos6">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/480692/pos/8/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos7">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/638216/pos/9/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos8">
+                                        </div>
+                                        <div class="swiper-slide" data-src="/seo/mostWanted/startseiteAjax/543467/pos/10/tracking/hp_setId1_setPos0_widtId4_widPos2_contentPos9">
+                                        </div>
+                                    <div class="swiper-slide">
+                    <div class="infoSlide">
+                        Los jugadores más buscados                    </div>
+                </div>
+            </div>
+            <div class="most-wanted-pagination"></div>
+        </div>
+        </div>
+            </div>
+        </div>
+        <div class="large-12 large-collapse small-12">
+            <div class="teaserContainer" id="teaser_spotlight">
+            <div class="teaserBox">
+            <a href="https://www.transfermarkt.co/liga-dimayor-ii/marktwertaenderungen/wettbewerb/COL1"
+               onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId5_widPos3_contentPos0' , 'Nuevos_valores_de_la_Liga_BetPlay_tras_la_revisin');"
+                            >
+                <div class="teaserContent">
+                                            <img class="teaserFoto lazy"
+                             data-src="https://tmssl.akamaized.net/images/foto/teaser/teaser-deiber-caicedo-1701955368-123467.jpeg?lm=1701955373"
+                             height="180"
+                             width="333.63"
+                        >
+                                        </div>
+                <div class="topLineKategorie topLineLeft statistik">
+                <span class="newsSubline  statistik">
+                    ¡Al detalle!                    </span>
+                </div>
+                <div class="topLineKategorie statistik">
+                <span class="kategorieIcon"
+                      title="Estadística"></span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="teaser-headline">
+                    <span class="teaserWappen"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/logo/homepageWappen70x70/col1.png?lm=1630312566" title="Liga Dimayor Finalización" alt="Liga Dimayor Finalización" class="lazy" /></span>
+                    <span class="text">
+                    Nuevos valores de la Liga BetPlay tras la revisión                </span>
+                </div>
+            </a>
+        </div>
+                <div class="teaserBox">
+            <a href="https://www.transfermarkt.co/mier-ruiz-caicedo-los-jugadores-mas-valiosos-de-la-liga-betplay/index/galerie/7589"
+               onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId5_widPos3_contentPos1' , 'Los_jugadores_mas_valiosos_de_la_Liga_BetPlay');"
+                            >
+                <div class="teaserContent">
+                                            <img class="teaserFoto lazy"
+                             data-src="https://tmssl.akamaized.net/images/foto/teaser/juan-pablo-vargas-1697133890-119137.jpg?lm=1697133900"
+                             height="180"
+                             width="333.63"
+                        >
+                                        </div>
+                <div class="topLineKategorie topLineLeft galerie">
+                <span class="newsSubline  galerie">
+                    Nuevos valores                    </span>
+                </div>
+                <div class="topLineKategorie galerie">
+                <span class="kategorieIcon"
+                      title="Galería"></span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="teaser-headline">
+                    <span class="teaserWappen"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/logo/homepageWappen70x70/col1.png?lm=1630312566" title="Liga Dimayor Finalización" alt="Liga Dimayor Finalización" class="lazy" /></span>
+                    <span class="text">
+                    Los jugadores más valiosos de la Liga BetPlay                </span>
+                </div>
+            </a>
+        </div>
+                <div class="teaserBox">
+            <a href="https://www.transfermarkt.co/api/spielerDerSaison/tmWahl?cp=COL1"
+               onclick="tmEvent('Startseite', 'hp_setId1_setPos0_widtId5_widPos3_contentPos2' , 'Vota_por_MVP_de_la_Liga_BetPlay_2023');"
+                            >
+                <div class="teaserContent">
+                                            <img class="teaserFoto lazy"
+                             data-src="https://tmssl.akamaized.net/images/foto/teaser/teaser-mvp-colombia-1701102773-122660.jpeg?lm=1701102778"
+                             height="180"
+                             width="333.63"
+                        >
+                                        </div>
+                <div class="topLineKategorie topLineLeft community">
+                <span class="newsSubline  community">
+                    24 jugadores                    </span>
+                </div>
+                <div class="topLineKategorie community">
+                <span class="kategorieIcon"
+                      title="Comunidad"></span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="teaser-headline">
+                    <span class="teaserWappen"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/logo/homepageWappen70x70/col1.png?lm=1630312566" title="Liga Dimayor Finalización" alt="Liga Dimayor Finalización" class="lazy" /></span>
+                    <span class="text">
+                    ¡Vota por MVP de la Liga BetPlay 2023!                </span>
+                </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        </div>
+<br class="clearer" /><!-- key_1_set_wettbewerb-->
+<div class="row shadow">
+    <div class="large-12 columns small-12">
+        <div class="direct-headline viewport-tracking" data-viewport="Wettbewerbsset_Fase_Final_LBD_II">
+                        <div class="direct-headline__header-box">
+            <h2 class="direct-headline__header direct-headline__header--highlight-red"
+                id="liganame">
+                <a class="direct-headline__link"
+                    href="/fase-final-liga-dimayor-clausura/startseite/wettbewerb/COLO"
+                    target="_blank"
+                    name="hp_setId8_setPos1_kategorie">
+                   <img
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-srcset="https://tmssl.akamaized.net/images/logo/verysmall/colo.png?lm=1580735919 1x,https://tmssl.akamaized.net/images/logo/homepageSmall/colo.png?lm=1580735919 2x"
+                        class="direct-headline__logo-competition lazy"
+                        alt="Fase Final Liga Dimayor Clausura"
+                        height="23"
+                        width="23"/>
+                        Fase Final Liga Dimayor Clausura                </a>
+            </h2>
+
+                    </div>
+        </div>
+    </div>
+    <div class="large-8 columns large-collapse small-12">
+        <div class="row no-margin-top">
+            <div class="large-12 columns small-12">
+                <span class="content-box-headline">Partidos de la jornada 7</span>
+<table class="startseite">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th class="text-right" colspan="3">Equipo local</th>
+            <th class="zentriert"></th>
+            <th colspan="3">Equipo visitante</th>
+            <th class="oddsServe-heading" data-competition="COLO"></th>        </tr>
+    </thead>
+    <tbody>
+                                        <tr class="einzeilig comp-set-matches__row" id="4240383">
+                <td class="datum">
+                    dom                <a href="/aktuell/waspassiertheute/aktuell/new/datum/2023-12-10"
+                   name="hp_setId8_setPos1_widtId10_widPos0_contentPos0">
+                                    10/12/2023                    </a>
+                                                    </td>
+                <td class="spieltagsthread home-sst">
+                                    </td>
+                <td class="rechts bold">
+                    <span class="vereinsname ">
+                        <a title="Junior de Barranquilla" name="hp_setId8_setPos1_widtId10_widPos0_contentPos0" href="/junior-fc/startseite/verein/11854">Junior FC</a>                    </span>
+                </td>
+                <td class="wappen_verysmall"><a title="Junior de BarranquillaJunior de Barranquilla" name="hp_setId8_setPos1_widtId10_widPos0_contentPos0" href="/junior-fc/startseite/verein/11854"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepage/11854.png?lm=1640855755" title="Junior de Barranquilla" alt="Junior de Barranquilla" class="lazy" /></a></td>
+                <td class="zentriert"><a title="Crónica" href="/spielbericht/index/spielbericht/4240383"><span class="matchresult finished">3:2</span></a></td>
+                <td class="wappen_verysmall"><a title="Independiente MedellínIndependiente Medellín" name="hp_setId8_setPos1_widtId10_widPos0_contentPos0" href="/independiente-medellin/startseite/verein/10093"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepage/10093.png?lm=1640855644" title="Independiente Medellín" alt="Independiente Medellín" class="lazy" /></a></td>
+                <td class="bold">
+                    <span class="vereinsname ">
+                        <a title="Independiente Medellín" name="hp_setId8_setPos1_widtId10_widPos0_contentPos0" href="/independiente-medellin/startseite/verein/10093">Indep. Medellín</a>                    </span>
+                </td>
+                <td class="spieltagsthread">
+                    
+                </td>
+                <td class="zentriert quotenzelle" onclick="tmEvent('werbung','click','wettbewerbsset');">
+                    <span class='oddsServe' data-match='4240383' data-gameday='7' data-competition='COLO'></span>                </td>
+                <!--
+                <td class="info-icon-startseite"><a><span>i</span></a></td>
+                -->
+            </tr>
+                        </tbody>
+
+    <tfoot class="comp-set-matches__footer">
+                    <tr>
+                <td style="text-align: right;" colspan="12">
+                    <span class="oddsServe-legal"></span>
+                </td>
+            </tr>
+            </tfoot>
+</table>
+<a title="Calendario completo" class="content-link" name="hp_setId8_setPos1_widtId10_widPos0_contentPos0" href="/fase-final-liga-dimayor-ii/spieltag/wettbewerb/COLO/saison_id/2022">Calendario completo</a>            </div>
+        </div>
+    </div>
+    <div class="large-4 columns large-collapse small-12">
+        <div class="large-12 columns">
+            <tm-competition-tables
+    competition-id="58"
+    tracking="hp_setId8_setPos1_widtId13_widPos1">
+</tm-competition-tables>
+        </div>
+    </div>
+        <div class="large-12 large-collapse small-12 clearer">
+        <div id="wettbewerbStats">
+                <div class="large-4 columns large-collapse small-12 margin-top">
+                    <tm-statistic identifier="cleansheets" translations='{&quot;headline&quot;:&quot;Imbatibilidad&quot;,&quot;playerPosition&quot;:&quot;Jugador\/Posici\u00f3n&quot;,&quot;club&quot;:&quot;Club&quot;,&quot;toNil&quot;:&quot;A cero&quot;,&quot;link&quot;:&quot;Partidos sin encajar&quot;}' in-viewport="" tracking="hp_setId8_setPos1_widtId16_widPos2" skeleton="tm-competition-cleansheets-284947856" competition-id="COLO" route="wettbewerb"></tm-statistic>
+<div id="tm-competition-cleansheets-284947856" class="ssc" style="max-width: 100%">
+    <div class="ssc-wrapper skeleton-p-0">
+        <div class="ssc-square skeleton-table-header"></div>
+        <div class="flex align-center justify-between skeleton-mb-1">
+            <div class="w-60 skeleton-flex-align-center skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-70 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-align-center skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-60 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-70 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle  skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between">
+            <div class="w-100 skeleton-flex-center-end skeleton-h-var" style="--tm-skeleton-height: 19px">
+                <div class="ssc-line w-50 skeleton-h-var" style="--tm-skeleton-height: 16px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="large-4 columns large-collapse small-12 margin-top">
+                    <tm-statistic identifier="goalgetter" translations='{&quot;headline&quot;:&quot;Goleadores&quot;,&quot;headlineLive&quot;:&quot;\u00daltimos goleadores&quot;,&quot;playerPosition&quot;:&quot;Jugador\/Posici\u00f3n&quot;,&quot;club&quot;:&quot;Club&quot;,&quot;goals&quot;:&quot;Goles&quot;,&quot;match&quot;:&quot;Partido&quot;,&quot;link&quot;:&quot;Lista de m\u00e1ximos goleadores&quot;}' tracking="hp_setId8_setPos1_widtId25_widPos3" in-viewport="" skeleton="tm-competition-scorer-536527192" competition-id="COLO"></tm-statistic>
+<div id="tm-competition-scorer-536527192" class="ssc" style="max-width: 100%">
+    <div class="ssc-wrapper skeleton-p-0">
+        <div class="ssc-square skeleton-table-header"></div>
+        <div class="flex align-center justify-between skeleton-mb-1">
+            <div class="w-60 skeleton-flex-align-center skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-70 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-align-center skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-60 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-70 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle  skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between">
+            <div class="w-100 skeleton-flex-center-end skeleton-h-var" style="--tm-skeleton-height: 19px">
+                <div class="ssc-line w-50 skeleton-h-var" style="--tm-skeleton-height: 16px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="large-4 columns large-collapse small-12 margin-top">
+                    <tm-statistic identifier="marketvalue" translations='{&quot;headline&quot;:&quot;Jugadores m\u00e1s valiosos&quot;,&quot;playerPosition&quot;:&quot;Jugador\/Posici\u00f3n&quot;,&quot;club&quot;:&quot;Club&quot;,&quot;marketValue&quot;:&quot;Valor de mercado&quot;,&quot;link&quot;:&quot;Ver mejores 100&quot;}' in-viewport="" skeleton="tm-competition-mvp-130375358" competition-id="COLO" tracking="hp_setId8_setPos1_widtId12_widPos4" route="wettbewerb"></tm-statistic>
+<div id="tm-competition-mvp-130375358" class="ssc" style="max-width: 100%">
+    <div class="ssc-wrapper skeleton-p-0">
+        <div class="ssc-square skeleton-table-header"></div>
+        <div class="flex align-center justify-between skeleton-mb-1">
+            <div class="w-60 skeleton-flex-align-center skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-70 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-align-center skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-60 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end skeleton-h-var" style="--tm-skeleton-height: 25px">
+                <div class="ssc-line w-70 skeleton-h-var" style="--tm-skeleton-height: 20px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle  skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between skeleton-mb-2">
+            <div class="flex skeleton-w-var" style="--tm-skeleton-width: 42px">
+                <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 48px; --tm-skeleton-width: 37px"></div>
+            </div>
+            <div class="skeleton-w-calc-60">
+                <div class="ssc-line w-70"></div>
+                <div class="ssc-line w-20"></div>
+            </div>
+            <div class="w-20">
+                <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 40px; --tm-skeleton-width: 40px"></div>
+            </div>
+            <div class="w-20 skeleton-flex-center-end">
+                <div class="ssc-line w-90 skeleton-h-var" style="--tm-skeleton-height: 30px"></div>
+            </div>
+        </div>
+
+        <div class="flex align-center justify-between">
+            <div class="w-100 skeleton-flex-center-end skeleton-h-var" style="--tm-skeleton-height: 19px">
+                <div class="ssc-line w-50 skeleton-h-var" style="--tm-skeleton-height: 16px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+        </div>
+    </div>
+    
+</div>
+<br class="clearer" /><!-- key_2_set_statistiken-->
+<div class="row shadow" id="statistikenbox">
+    <div class="large-12 columns small-12">
+        <div class="direct-headline viewport-tracking"
+             data-viewport="Statistiken">
+            <div class="direct-headline__header-box">
+            <h2 class="direct-headline__header direct-headline__header--highlight-blue">
+                <a class="direct-headline__link"
+                   href="/detailsuche/spielerdetail/suche"
+                   name="hp_setId4_setPos2_kategorie">
+                    Estadísticas                </a>
+            </h2>
+                    </div>
+        </div>
+    </div>
+    <div class="large-4 columns large-collapse small-12">
+        <div>
+    <header class="content-box-headline">
+        Rumores actuales    </header>
+    <div class="table-head">
+        <div class="table-head__first-column">
+            Jugador/Club actual        </div>
+        <div class="table-head__second-column">
+            Interesado        </div>
+        <div class="table-head__third-column">
+            %        </div>
+    </div>
+            <div class="content-row__link-fix">
+            <div class="content-row" data-link="/j-rios-al-atletico-nacional-/thread/forum/678/thread_id/369/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos0">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/417780-1583853361.jpg?lm=1" title="J. Ríos" alt="J. Ríos" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <a class="content-row__probability" href="/j-rios-al-atletico-nacional-/thread/forum/678/thread_id/369/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos0">
+                    <div class="content-row__number-probability">
+                        50                    </div>
+                    <div class="content-row__icon">
+                                                    <span class="content-row__percent">%</span>
+                            <span class="content-row__arrow">
+                                <span class="arrow up"></span>
+                            </span>
+                                                </div>
+                </a>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Juan David Ríos" name="hp_setId4_setPos2_widtId1_widPos0_contentPos0" href="/juan-david-rios/profil/spieler/417780">J. Ríos</a>                </span>
+                <span class="content-row__player-addition">
+                    <a title="Deportes Tolima" name="hp_setId4_setPos2_widtId1_widPos0_contentPos0" href="/deportes-tolima/startseite/verein/10503">Deportes Tolima</a>                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second">
+                <a title="Atlético NacionalAtlético Nacional" name="hp_setId4_setPos2_widtId1_widPos0_contentPos0" href="/atletico-nacional/startseite/verein/8172"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/8172.png?lm=1652382300" title="Atlético Nacional" alt="Atlético Nacional" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/joaquin-varela-al-atletico-nacional-/thread/forum/678/thread_id/365/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos1">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/421194-1679324398.JPG?lm=1" title="Joaquín Varela" alt="Joaquín Varela" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <a class="content-row__probability" href="/joaquin-varela-al-atletico-nacional-/thread/forum/678/thread_id/365/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos1">
+                    <div class="content-row__number-probability">
+                        30                    </div>
+                    <div class="content-row__icon">
+                                                    <span class="content-row__percent">%</span>
+                            <span class="content-row__arrow">
+                                <span class="arrow down"></span>
+                            </span>
+                                                </div>
+                </a>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Joaquín Varela" name="hp_setId4_setPos2_widtId1_widPos0_contentPos1" href="/joaquin-varela/profil/spieler/421194">Joaquín Varela</a>                </span>
+                <span class="content-row__player-addition">
+                    <a title="Independiente Medellín" name="hp_setId4_setPos2_widtId1_widPos0_contentPos1" href="/independiente-medellin/startseite/verein/10093">Independiente Medellín</a>                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second">
+                <a title="Atlético NacionalAtlético Nacional" name="hp_setId4_setPos2_widtId1_widPos0_contentPos1" href="/atletico-nacional/startseite/verein/8172"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/8172.png?lm=1652382300" title="Atlético Nacional" alt="Atlético Nacional" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/d-banguero-al-millonarios-fc-/thread/forum/678/thread_id/368/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/73345-1617721924.jpg?lm=1" title="D. Banguero" alt="D. Banguero" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <a class="content-row__probability" href="/d-banguero-al-millonarios-fc-/thread/forum/678/thread_id/368/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos2">
+                    <div class="content-row__number-probability">
+                        50                    </div>
+                    <div class="content-row__icon">
+                                                    <span class="content-row__percent">%</span>
+                            <span class="content-row__arrow">
+                                <span class="arrow up"></span>
+                            </span>
+                                                </div>
+                </a>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Danovis Banguero" name="hp_setId4_setPos2_widtId1_widPos0_contentPos2" href="/danovis-banguero/profil/spieler/73345">D. Banguero</a>                </span>
+                <span class="content-row__player-addition">
+                    <a title="Águilas Doradas" name="hp_setId4_setPos2_widtId1_widPos0_contentPos2" href="/rionegro-aguilas/startseite/verein/20590">Águilas Doradas</a>                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second">
+                <a title="Millonarios FCMillonarios FC" name="hp_setId4_setPos2_widtId1_widPos0_contentPos2" href="/millonarios-fc/startseite/verein/2350"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/2350.png?lm=1644878652" title="Millonarios FC" alt="Millonarios FC" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/rafael-perez-al-atletico-nacional-/thread/forum/678/thread_id/366/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos3">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/117874-1670675443.png?lm=1" title="Rafael Pérez" alt="Rafael Pérez" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <a class="content-row__probability" href="/rafael-perez-al-atletico-nacional-/thread/forum/678/thread_id/366/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos3">
+                    <div class="content-row__number-probability">
+                        30                    </div>
+                    <div class="content-row__icon">
+                                                    <span class="content-row__percent">%</span>
+                            <span class="content-row__arrow">
+                                <span class="arrow down"></span>
+                            </span>
+                                                </div>
+                </a>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Rafael Pérez" name="hp_setId4_setPos2_widtId1_widPos0_contentPos3" href="/rafael-perez/profil/spieler/117874">Rafael Pérez</a>                </span>
+                <span class="content-row__player-addition">
+                    <a title="CA San Lorenzo de Almagro" name="hp_setId4_setPos2_widtId1_widPos0_contentPos3" href="/club-atletico-san-lorenzo-de-almagro/startseite/verein/1775">CA San Lorenzo de Almagro</a>                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second">
+                <a title="Atlético NacionalAtlético Nacional" name="hp_setId4_setPos2_widtId1_widPos0_contentPos3" href="/atletico-nacional/startseite/verein/8172"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/8172.png?lm=1652382300" title="Atlético Nacional" alt="Atlético Nacional" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/pablo-sabbag-al-millonarios-fc-/thread/forum/678/thread_id/364/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos4">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/426325-1689024389.jpg?lm=1" title="Pablo Sabbag" alt="Pablo Sabbag" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <a class="content-row__probability" href="/pablo-sabbag-al-millonarios-fc-/thread/forum/678/thread_id/364/page/first" name="hp_setId4_setPos2_widtId1_widPos0_contentPos4">
+                    <div class="content-row__number-probability">
+                        43                    </div>
+                    <div class="content-row__icon">
+                                                    <span class="content-row__percent">%</span>
+                            <span class="content-row__arrow">
+                                <span class="arrow down"></span>
+                            </span>
+                                                </div>
+                </a>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Pablo Sabbag" name="hp_setId4_setPos2_widtId1_widPos0_contentPos4" href="/pablo-sabbag/profil/spieler/426325">Pablo Sabbag</a>                </span>
+                <span class="content-row__player-addition">
+                    <a title="Club Alianza Lima" name="hp_setId4_setPos2_widtId1_widPos0_contentPos4" href="/club-alianza-lima/startseite/verein/184">Club Alianza Lima</a>                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second">
+                <a title="Millonarios FCMillonarios FC" name="hp_setId4_setPos2_widtId1_widPos0_contentPos4" href="/millonarios-fc/startseite/verein/2350"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/2350.png?lm=1644878652" title="Millonarios FC" alt="Millonarios FC" class="lazy" /></a>            </div>
+        </div>
+            <a name="hp_setId4_setPos2_widtId1_widPos0" class="content-link" href="/rumores-colombia/detail/forum/678">Ir a la fábrica de rumores</a></div>
+    </div>
+    <div class="large-4 columns large-collapse small-12">
+        <div>
+    <header class="content-box-headline">
+        Fichajes top de invierno 23/24    </header>
+    <div class="table-head top-transfers">
+        <div class="table-head__first-column">
+            Jugador/Posición        </div>
+        <div class="table-head__second-column">
+            Club        </div>
+        <div class="table-head__third-column">
+            Coste        </div>
+    </div>
+            <div class="content-row__link-fix">
+            <div class="content-row" data-link="/transfers/saisontransfers/statistik/top?saison_id=2023&transferfenster=wintertransfers" name="hp_setId4_setPos2_widtId29_widPos1_contentPos0">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/943837-1683289712.jpg?lm=1" title="Vitor Roque" alt="Vitor Roque" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__transfer-fee-right">
+                        40,00 <span class="abloeseZusatz">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Vitor Roque" name="hp_setId4_setPos2_widtId29_widPos1" href="/vitor-roque/profil/spieler/943837">Vitor Roque</a>                </span>
+                <span class="content-row__player-addition">
+                    Delantero centro                </span>
+            </div>
+            <div class="content-row__top-transfer content-row__link-fix--second">
+                <div class="content-row__transfer-logo">
+                    <span class="content-row__transfer-old">
+                        <a title="Club Athletico ParanaenseClub Athletico Paranaense" name="hp_setId4_setPos2_widtId29_widPos1" href="/club-athletico-paranaense/startseite/verein/679/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/679.png?lm=1548711363" title="Club Athletico Paranaense" alt="Club Athletico Paranaense" class="lazy" /></a>                    </span>
+                    <span class="content-row__transfer-new">
+                        <a title="FC BarcelonaFC Barcelona" name="hp_setId4_setPos2_widtId29_widPos1" href="/fc-barcelona/startseite/verein/131/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/131.png?lm=1406739548" title="FC Barcelona" alt="FC Barcelona" class="lazy" /></a>                    </span>
+                </div>
+            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/transfers/saisontransfers/statistik/top?saison_id=2023&transferfenster=wintertransfers" name="hp_setId4_setPos2_widtId29_widPos1_contentPos1">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/1004741-1673542080.png?lm=1" title="Pedro" alt="Pedro" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__transfer-fee-right">
+                        9,00 <span class="abloeseZusatz">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Pedro" name="hp_setId4_setPos2_widtId29_widPos1" href="/pedro/profil/spieler/1004741">Pedro</a>                </span>
+                <span class="content-row__player-addition">
+                    Extremo izquierdo                </span>
+            </div>
+            <div class="content-row__top-transfer content-row__link-fix--second">
+                <div class="content-row__transfer-logo">
+                    <span class="content-row__transfer-old">
+                        <a title="Sport Club Corinthians PaulistaSport Club Corinthians Paulista" name="hp_setId4_setPos2_widtId29_widPos1" href="/corinthians-sao-paulo/startseite/verein/199/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/199.png?lm=1649430398" title="Sport Club Corinthians Paulista" alt="Sport Club Corinthians Paulista" class="lazy" /></a>                    </span>
+                    <span class="content-row__transfer-new">
+                        <a title="Zenit de San PetersburgoZenit de San Petersburgo" name="hp_setId4_setPos2_widtId29_widPos1" href="/zenit-st-petersburg/startseite/verein/964/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/964.png?lm=1687671770" title="Zenit de San Petersburgo" alt="Zenit de San Petersburgo" class="lazy" /></a>                    </span>
+                </div>
+            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/transfers/saisontransfers/statistik/top?saison_id=2023&transferfenster=wintertransfers" name="hp_setId4_setPos2_widtId29_widPos1_contentPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/456623-1618606445.JPG?lm=1" title="Esequiel Barco" alt="Esequiel Barco" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__transfer-fee-right">
+                        6,41 <span class="abloeseZusatz">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Esequiel Barco" name="hp_setId4_setPos2_widtId29_widPos1" href="/esequiel-barco/profil/spieler/456623">Esequiel Barco</a>                </span>
+                <span class="content-row__player-addition">
+                    Extremo izquierdo                </span>
+            </div>
+            <div class="content-row__top-transfer content-row__link-fix--second">
+                <div class="content-row__transfer-logo">
+                    <span class="content-row__transfer-old">
+                        <a title="Atlanta United FCAtlanta United FC" name="hp_setId4_setPos2_widtId29_widPos1" href="/atlanta-united-fc/startseite/verein/51663/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/51663.png?lm=1478716243" title="Atlanta United FC" alt="Atlanta United FC" class="lazy" /></a>                    </span>
+                    <span class="content-row__transfer-new">
+                        <a title="CA River PlateCA River Plate" name="hp_setId4_setPos2_widtId29_widPos1" href="/club-atletico-river-plate/startseite/verein/209/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/209.png?lm=1645539487" title="CA River Plate" alt="CA River Plate" class="lazy" /></a>                    </span>
+                </div>
+            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/transfers/saisontransfers/statistik/top?saison_id=2023&transferfenster=wintertransfers" name="hp_setId4_setPos2_widtId29_widPos1_contentPos3">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/642758-1694004255.JPG?lm=1" title="Aníbal Moreno" alt="Aníbal Moreno" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__transfer-fee-right">
+                        6,45 <span class="abloeseZusatz">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Aníbal Moreno" name="hp_setId4_setPos2_widtId29_widPos1" href="/anibal-moreno/profil/spieler/642758">Aníbal Moreno</a>                </span>
+                <span class="content-row__player-addition">
+                    Pivote                </span>
+            </div>
+            <div class="content-row__top-transfer content-row__link-fix--second">
+                <div class="content-row__transfer-logo">
+                    <span class="content-row__transfer-old">
+                        <a title="Racing ClubRacing Club" name="hp_setId4_setPos2_widtId29_widPos1" href="/racing-club/startseite/verein/1444/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/1444.png?lm=1412762689" title="Racing Club" alt="Racing Club" class="lazy" /></a>                    </span>
+                    <span class="content-row__transfer-new">
+                        <a title="SE PalmeirasSE Palmeiras" name="hp_setId4_setPos2_widtId29_widPos1" href="/se-palmeiras-sao-paulo/startseite/verein/1023/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/1023.png?lm=1411204983" title="SE Palmeiras" alt="SE Palmeiras" class="lazy" /></a>                    </span>
+                </div>
+            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/transfers/saisontransfers/statistik/top?saison_id=2023&transferfenster=wintertransfers" name="hp_setId4_setPos2_widtId29_widPos1_contentPos4">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/468022-1678216862.jpg?lm=1" title="Miles Robinson" alt="Miles Robinson" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__transfer-fee-right">
+                        -                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Miles Robinson" name="hp_setId4_setPos2_widtId29_widPos1" href="/miles-robinson/profil/spieler/468022">Miles Robinson</a>                </span>
+                <span class="content-row__player-addition">
+                    Defensa central                </span>
+            </div>
+            <div class="content-row__top-transfer content-row__link-fix--second">
+                <div class="content-row__transfer-logo">
+                    <span class="content-row__transfer-old">
+                        <a title="Atlanta United FCAtlanta United FC" name="hp_setId4_setPos2_widtId29_widPos1" href="/atlanta-united-fc/startseite/verein/51663/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/51663.png?lm=1478716243" title="Atlanta United FC" alt="Atlanta United FC" class="lazy" /></a>                    </span>
+                    <span class="content-row__transfer-new">
+                        <a title="Sin equipoSin equipo" name="hp_setId4_setPos2_widtId29_widPos1" href="/vereinslos/startseite/verein/515/saison_id/2023"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/515.png?lm=1456997255" title="Sin equipo" alt="Sin equipo" class="lazy" /></a>                    </span>
+                </div>
+            </div>
+        </div>
+            <a name="hp_setId4_setPos2_widtId29_widPos1" class="content-link" href="/transfers/saisontransfers/statistik/top?saison_id=2023&amp;transferfenster=wintertransfers">Todos los fichajes de invierno</a></div>    </div>
+    <div class="large-4 columns large-collapse small-12">
+        
+<div>
+    <header class="content-box-headline">
+        Jugadores más valiosos    </header>
+    <div class="table-head">
+        <div class="table-head__first-column">
+            Jugador/Posición        </div>
+        <div class="table-head__second-column">
+            Club        </div>
+        <div class="table-head__third-column">
+            Valor de mercado        </div>
+    </div>
+            <div class="content-row__link-fix">
+            <div class="content-row" data-link="/marktwertetop/wertvollstespieler" name="hp_setId4_setPos2_widtId12_widPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/418560-1694590614.jpg?lm=1" title="Erling Haaland" alt="Erling Haaland" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__market-value">
+                        180,00 <span class="waehrung">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Erling Haaland" name="hp_setId4_setPos2_widtId12_widPos2" href="/erling-haaland/profil/spieler/418560">Erling Haaland</a>                </span>
+                <span class="content-row__player-addition">
+                    Delantero centro                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second content-row__logo-club">
+                <a title="Manchester CityManchester City" name="hp_setId4_setPos2_widtId12_widPos2" href="/manchester-city/startseite/verein/281"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/281.png?lm=1467356331" title="Manchester City" alt="Manchester City" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/marktwertetop/wertvollstespieler" name="hp_setId4_setPos2_widtId12_widPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/342229-1682683695.jpg?lm=1" title="Kylian Mbappé" alt="Kylian Mbappé" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__market-value">
+                        180,00 <span class="waehrung">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Kylian Mbappé" name="hp_setId4_setPos2_widtId12_widPos2" href="/kylian-mbappe/profil/spieler/342229">Kylian Mbappé</a>                </span>
+                <span class="content-row__player-addition">
+                    Extremo izquierdo                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second content-row__logo-club">
+                <a title="París Saint-Germain FCParís Saint-Germain FC" name="hp_setId4_setPos2_widtId12_widPos2" href="/fc-paris-saint-germain/startseite/verein/583"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/583.png?lm=1522312728" title="París Saint-Germain FC" alt="París Saint-Germain FC" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/marktwertetop/wertvollstespieler" name="hp_setId4_setPos2_widtId12_widPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/581678-1693987944.jpg?lm=1" title="Jude Bellingham" alt="Jude Bellingham" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__market-value">
+                        150,00 <span class="waehrung">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Jude Bellingham" name="hp_setId4_setPos2_widtId12_widPos2" href="/jude-bellingham/profil/spieler/581678">Jude Bellingham</a>                </span>
+                <span class="content-row__player-addition">
+                    Mediocentro ofensivo                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second content-row__logo-club">
+                <a title="Real Madrid CFReal Madrid CF" name="hp_setId4_setPos2_widtId12_widPos2" href="/real-madrid/startseite/verein/418"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/418.png?lm=1697726166" title="Real Madrid CF" alt="Real Madrid CF" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/marktwertetop/wertvollstespieler" name="hp_setId4_setPos2_widtId12_widPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/371998-1664869583.jpg?lm=1" title="Vinicius Junior" alt="Vinicius Junior" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__market-value">
+                        150,00 <span class="waehrung">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Vinicius Junior" name="hp_setId4_setPos2_widtId12_widPos2" href="/vinicius-junior/profil/spieler/371998">Vinicius Junior</a>                </span>
+                <span class="content-row__player-addition">
+                    Extremo izquierdo                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second content-row__logo-club">
+                <a title="Real Madrid CFReal Madrid CF" name="hp_setId4_setPos2_widtId12_widPos2" href="/real-madrid/startseite/verein/418"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/418.png?lm=1697726166" title="Real Madrid CF" alt="Real Madrid CF" class="lazy" /></a>            </div>
+        </div>
+                <div class="content-row__link-fix">
+            <div class="content-row" data-link="/marktwertetop/wertvollstespieler" name="hp_setId4_setPos2_widtId12_widPos2">
+                <div class="content-row__box">
+                    <div class="content-row__player-picture">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/home2/433177-1684155052.jpg?lm=1" title="Bukayo Saka" alt="Bukayo Saka" class="swiper-lazy lazy" />                    </div>
+                </div>
+                <div class="content-row__box">
+                </div>
+                <div class="content-row__transfer-fee">
+                    <div class="content-row__market-value">
+                        120,00 <span class="waehrung">mill. €</span>                    </div>
+                </div>
+            </div>
+            <div class="content-row__player-name content-row__link-fix--first">
+                <span>
+                    <a title="Bukayo Saka" name="hp_setId4_setPos2_widtId12_widPos2" href="/bukayo-saka/profil/spieler/433177">Bukayo Saka</a>                </span>
+                <span class="content-row__player-addition">
+                    Extremo derecho                </span>
+            </div>
+            <div class="content-row__club-logo content-row__link-fix--second content-row__logo-club">
+                <a title="Arsenal FCArsenal FC" name="hp_setId4_setPos2_widtId12_widPos2" href="/fc-arsenal/startseite/verein/11"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/wappen/homepageWappen70x70/11.png?lm=1489787850" title="Arsenal FC" alt="Arsenal FC" class="lazy" /></a>            </div>
+        </div>
+            <a class="content-link" href="/marktwertetop/wertvollstespieler">
+        Ver mejores 100    </a>
+</div>    </div>
+</div>
+<div class="werbung werbung-D_HP_2"><div id="div-gpt-ad-1621528173524-0"style="min-width: 728px; min-height: 90px;"></div>
+<script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621528173524-0"); });</script>
+</div><br class="clearer" /><!-- key_3_set_newstickerKurz-->
+<div class="row padding shadow" id="newstickerbox">
+    <div class="large-12 columns small-12">
+        <div class="direct-headline viewport-tracking" data-viewport="NewstickerKurz">
+            <div class="direct-headline__header-box">
+                <h2 class="direct-headline__header direct-headline__header--highlight-blue">
+                    <a class="direct-headline__link"
+                        href="/aktuell/newsarchiv"
+                        name="hp_setId15_setPos3_kategorie">
+                        Actualidad                    </a>
+                </h2>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="large-8 columns large-collapse small-12">
+        
+<div>
+  <div class="newsticker__container " >
+    <div class="newsticker__box">
+    <a
+      href="/copa-america-brasil-vs-colombia-el-partido-mas-valioso-argentina-gran-favorita-al-titulo/view/news/431029"
+      class="newsticker__link"
+              onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos0' , 'Copa_America_Brasil_vs_Colombia_el_partido_mas_valioso_Argentina_gran_favorita_al_ttulo');"
+              >
+        <div class="newsticker__boxheader">
+                    07.12.2023 - 22:56                  </div>
+                   <span class="newsticker__emblem">
+              <img src="https://tmssl.akamaized.net/images/logo/homepageSmall/cam4.png?lm=1625681899" title="Copa América 2024" alt="Copa América 2024" class="minifoto" />            </span>
+                <span class="newsticker__image">
+            <img src="https://tmssl.akamaized.net/images/logo/normal/cam4.png?lm=1625681899" title="Copa América 2024" alt="Copa América 2024" class="foto" />        </span>
+        <div class="newsticker__headline-box">
+            <p class="newsticker__subline">
+                ¡Fase de grupos lista!            </p>
+            <p class="newsticker__headline">
+                Copa América: Brasil vs. Colombia, el partido más valioso. ...            </p>
+        </div>
+    </a>
+</div>
+<div class="newsticker__box">
+    <a
+      href="/deiber-caicedo-se-repotencia-y-entra-al-top-mas-valioso-iquest-la-mayor-joya-ofensiva-del-fpc-/view/news/431024"
+      class="newsticker__link"
+              onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos1' , 'Deiber_Caicedo_se_repotencia_y_entra_al_top_mas_valioso_La_mayor_joya_ofensiva_del_FPC');"
+              >
+        <div class="newsticker__boxheader">
+                    07.12.2023 - 13:08                  </div>
+                   <span class="newsticker__emblem">
+              <img src="https://tmssl.akamaized.net/images/wappen/homepageSmall/11854.png?lm=1640855755" title="Junior de Barranquilla" alt="Junior de Barranquilla" class="minifoto" />            </span>
+                <span class="newsticker__image">
+            <img src="https://img.a.transfermarkt.technology/portrait/medium/543467-1678214745.jpg?lm=1" title="Déiber Caicedo - Fuente: Major League Soccer" alt="Déiber Caicedo" class="foto" />        </span>
+        <div class="newsticker__headline-box">
+            <p class="newsticker__subline">
+                Valores Liga BetPlay            </p>
+            <p class="newsticker__headline">
+                Deiber Caicedo se repotencia y entra al top más valioso: ¿La mayor ...            </p>
+        </div>
+    </a>
+</div>
+<div class="newsticker__box">
+    <a
+      href="/chelsea-fuera-de-los-30-equipos-en-mejor-forma-pochettino-el-mas-gastador-en-una-sola-campana/view/news/431021"
+      class="newsticker__link"
+              onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos2' , 'Chelsea_fuera_de_los_30_equipos_en_mejor_forma_Pochettino_el_mas_gastador_en_una_sola_campaa');"
+              >
+        <div class="newsticker__boxheader">
+                    07.12.2023 - 10:12                  </div>
+                   <span class="newsticker__emblem">
+              <img src="https://tmssl.akamaized.net/images/wappen/homepageSmall/631.png?lm=1682435911" title="Chelsea FC" alt="Chelsea FC" class="minifoto" />            </span>
+                <span class="newsticker__image">
+            <img src="https://img.a.transfermarkt.technology/portrait/medium/9044-1699302170.jpg?lm=1" title="Mauricio Pochettino - Fuente: IMAGO" alt="Mauricio Pochettino" class="foto" />        </span>
+        <div class="newsticker__headline-box">
+            <p class="newsticker__subline">
+                Gasto récord en fichajes            </p>
+            <p class="newsticker__headline">
+                Chelsea, fuera de los 30 equipos en mejor forma: Pochettino, el más ...            </p>
+        </div>
+    </a>
+</div>
+<div class="newsticker__box">
+    <a
+      href="/valores-de-mercado-liga-betplay-mier-reclama-el-liderato-y-portilla-se-une-al-top/view/news/430978"
+      class="newsticker__link"
+              onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos3' , 'Valores_de_mercado_Liga_BetPlay_Mier_reclama_el_liderato_y_Portilla_se_une_al_top');"
+              >
+        <div class="newsticker__boxheader">
+                    07.12.2023 - 02:28                  </div>
+                   <span class="newsticker__emblem">
+              <img src="https://tmssl.akamaized.net/images/logo/homepageSmall/col1.png?lm=1630312566" title="Liga Dimayor Finalización" alt="Liga Dimayor Finalización" class="minifoto" />            </span>
+                <span class="newsticker__image">
+            <img src="https://img.a.transfermarkt.technology/portrait/medium/491542-1693600544.JPG?lm=1" title="Kevin Mier - Fuente: Vizzor Image" alt="Kevin Mier" class="foto" />        </span>
+        <div class="newsticker__headline-box">
+            <p class="newsticker__subline">
+                Actualización completa            </p>
+            <p class="newsticker__headline">
+                Valores de mercado Liga BetPlay: Mier reclama el liderato y Portilla ...            </p>
+        </div>
+    </a>
+</div>
+<div class="newsticker__box">
+    <a
+      href="/millonarios-en-busca-de-un-nuevo-goleador-iquest-leonardo-castro-no-es-suficiente-como-figura-/view/news/430971"
+      class="newsticker__link"
+              onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos4' , 'Millonarios_en_busca_de_un_nuevo_goleador_Leonardo_Castro_no_es_suficiente_como_figura');"
+              >
+        <div class="newsticker__boxheader">
+                    06.12.2023 - 10:34                  </div>
+                   <span class="newsticker__emblem">
+              <img src="https://tmssl.akamaized.net/images/wappen/homepageSmall/2350.png?lm=1644878652" title="Millonarios FC" alt="Millonarios FC" class="minifoto" />            </span>
+                <span class="newsticker__image">
+            <img src="https://img.a.transfermarkt.technology/portrait/medium/426325-1689024389.jpg?lm=1" title="Pablo Sabbag - Fuente: IMAGO" alt="Pablo Sabbag" class="foto" />        </span>
+        <div class="newsticker__headline-box">
+            <p class="newsticker__subline">
+                Sabbag, opción principal            </p>
+            <p class="newsticker__headline">
+                Millonarios, en busca de un nuevo goleador: ¿Leonardo Castro no es ...            </p>
+        </div>
+    </a>
+</div>
+<div class="newsticker__box">
+    <a
+      href="/claudio-echeverri-el-diablito-ya-esta-en-la-mira-de-los-grandes-clubes-de-europa/view/news/430962"
+      class="newsticker__link"
+              onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos5' , 'Claudio_Echeverri_el_Diablito_ya_esta_en_la_mira_de_los_grandes_clubes_de_Europa');"
+              >
+        <div class="newsticker__boxheader">
+                    06.12.2023 - 08:38                  </div>
+                   <span class="newsticker__emblem">
+              <img src="https://tmssl.akamaized.net/images/wappen/homepageSmall/209.png?lm=1645539487" title="CA River Plate" alt="CA River Plate" class="minifoto" />            </span>
+                <span class="newsticker__image">
+            <img src="https://img.a.transfermarkt.technology/portrait/medium/994536-1694001438.png?lm=1" title="Claudio Echeverri - Fuente: Prensa River" alt="Claudio Echeverri" class="foto" />        </span>
+        <div class="newsticker__headline-box">
+            <p class="newsticker__subline">
+                Calendario de talentos            </p>
+            <p class="newsticker__headline">
+                Claudio Echeverri: el ‘Diablito’ ya está en la mira de los grandes ...            </p>
+        </div>
+    </a>
+</div>
+  </div>
+
+    <a href="/aktuell/newsarchiv"
+       class="newsticker__button"
+       onclick="tmEvent('Startseite', 'hp_setId15_setPos3_widtId6_widPos0_contentPos12' , 'alle_news_des_tages');"
+        >
+        Todas las noticias del día     </a>
+</div>
+    </div>
+        <div class="large-4 columns large-collapse small-12">
+                <div id="home-rectangle-newsticker">
+            <div class="werbung werbung-rectangle2"><div id="div-gpt-ad-1621528018930-0"style="min-width: 300px; min-height: 250px;"></div>
+<script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621528018930-0"); });</script>
+</div>        </div>
+            </div>
+</div>
+<br class="clearer" />    </div>
+            <a href="#" data-custom-open="modal-news-update-popup">
+            </a>
+
+            <div id="modal-news-update-popup" class="modal micromodal-slide" aria-hidden="true">
+                <div class="row modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-news-update-popup-title" >
+                        <header class="large-12 columns modal-news-update-content">
+                            <a onclick="tmEvent('NeueNews','Logo-Link','');
+" name="neueNews" href="/?newsupdate=431029&time=2023-12-11_03-58" class="news-update-logo-link"></a>
+                            <h2 id="modal-news-update-popup-title news-update_headline">
+                                Hay <a href="/?newsupdate=431029&time=2023-12-11_03-58" onclick="tmEvent('NeueNews','Text-Link','');
+" name="neueNews">nuevas noticias</a>!                            </h2>
+                            <br>
+                            <a onclick="tmEvent('NeueNews','Button-Link','');
+" name="neueNews" href="/?newsupdate=431029&time=2023-12-11_03-58" class="button large">Actualizar página inicial</a>
+                            <button aria-label="Close modal" data-micromodal-close class="news-update-close-modal modal__close"></button>
+                        </header>
+                        <div id="modal-news-update-popup" class="modal__content">
+                            <fieldset class="modal-news-fieldset">
+                                <input onclick="tmEvent('NeueNews','Deaktiviert','');
+" type="checkbox" class="cbox" id="news-update-popup-unsubscribe" />
+                                <label>No mostrar de nuevo</label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                </main>
+
+        <footer>
+            <div class="tm-footer">
+            <a href="/"
+           class="tm-footer__logo">
+          <img src="https://tmsi.akamaized.net/head/transfermarkt_logo.svg" alt="Transfermarkt" height="33" width="80"/>
+        </a>
+          <ul class="tm-footer__links">
+    <li class="tm-footer__links-item">
+      <a href="/intern/impressum">
+          Aviso legal      </a>
+    </li>
+    <li class="tm-footer__links-item">
+      <a href="/intern/web/datenschutz">
+          Política de privacidad      </a>
+    </li>
+    <li class="tm-footer__links-item">
+      <a href="javascript:void(0)" class="cmp-link">
+          Privacidad      </a>
+    </li>
+    <li class="tm-footer__links-item">
+      <a href="/intern/anb">
+          Información corporativa      </a>
+    </li>
+    <li class="tm-footer__links-item">
+      <a href="/intern/tmteam">
+          Equipo de TM      </a>
+    </li>
+                        <li class="tm-footer__links-item">
+      <a href="/intern/faq">
+          Ayuda      </a>
+    </li>
+    <li class="tm-footer__links-item">
+      <a href="/intern/fehlermelden">
+          Enviar reporte de errores      </a>
+    </li>
+  </ul>
+</div>
+        </footer>
+                <div id="menue_overlay"></div>
+    </div>
+        <script type="text/javascript">
+        var iam_data = {
+"st":"transfer",
+"cp":"home_rest",
+"co":""
+}
+    </script>
+        <script type="module">
+        var defaultOptions = {
+            tracking: !0,
+            refreshAds: !0
+        };
+        export var refreshAd = function() {
+            var e, n;
+            [ASCDP.hasOwnProperty("adS"), null === (e = ASCDP.adS) || void 0 === e ? void 0 : e.hasOwnProperty("reloadAds"), "function" == typeof(null === (n = ASCDP.adS) || void 0 === n ? void 0 : n.reloadAds)].every(function(e) {
+                return e
+            }) && ASCDP.adS.reloadAds()
+        };
+        export var TmTrackingAndAds = function(e, n) {
+            void 0 === n && (n = defaultOptions);
+            var r = ["tabelle", "reiter", "forum"].includes(e) ? e : "";
+            n.tracking && (gtag("event", "page_view", {
+                page_path: "/jsContent" + window.location.pathname
+            }), sendIvwData(r)), n.refreshAds && "undefined" != typeof ASCDP && refreshAd()
+        };
+        window.tmTrackingAndAds = function(e, n) {
+            return TmTrackingAndAds(e, n)
+        };
+    </script>
+            <script type="text/javascript">
+            const iommInterval = setInterval(() => {
+                if (typeof IOMm === 'function') {
+                    IOMm('configure', {
+                        st: iam_data.st,
+                        dn: 'data-84a0f3455d.transfermarkt.co',
+                        mh: 5
+                    });
+                    IOMm('pageview', {
+                        cp: iam_data.cp,
+                        co: iam_data.co
+                    });
+                    clearInterval(iommInterval);
+                }
+            }, 250);
+        </script>
+    <script type="text/javascript">
+	if(typeof(adet) == "boolean" && adet == false){
+		img_src="/static/singlepictures/jk99hhfsdh209nbnkjldgh90sghfsdlk";
+	} else {
+		img_src="/static/singlepictures/jku90whjlkjbwbta1g4b8h89fh8sgh8d";
+	}
+	var elem = document.createElement("img");
+	document.body.appendChild(elem);
+	elem.src = img_src;
+</script>
+
+    <script type="module" src="https://tmsi.akamaized.net/js/custom-element-globals/tm-global-elements.esm.js" defer></script><script nomodule="" src="https://tmsi.akamaized.net/js/custom-element-globals/tm-global-elements.js" defer></script><tm-consent type="adition" no-checkbox embed="PHNjcmlwdCBzcmM9Imh0dHBzOi8vY3JlYXRpdmUtY2RuLm9kZHNzZXJ2ZS5jb20vbG9hZGVyLmpzP3B1Ymxpc2hlcj10bSIgYXN5bmM9ImFzeW5jIj48L3NjcmlwdD4="></tm-consent><tm-consent type="googleanalytics" no-checkbox embed="PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMzgxNjIwNC0xMyI+PC9zY3JpcHQ+"></tm-consent><script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/competition-tables/bundle.js"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/tm-menu.min.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/vendors.min.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/consent/bundle.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+function skyscraperSwitch() {
+               const firstAd = document.getElementsByClassName("werbung-skyscraper");
+               const secondAd = document.getElementsByClassName("werbung-skyscraperbtf")
+                if (this.scrollY > 699) {
+                    firstAd[0].style.visibility = "hidden";
+                    secondAd[0].style.position = "fixed";
+                    secondAd[0].style.top = "40px";
+                } else {
+                    firstAd[0].style.visibility = "visible";
+                    secondAd[0].style.position = "relative";
+                    secondAd[0].style.top = "unset";
+                }
+            }
+            window.addEventListener("scroll", skyscraperSwitch, false);
+        function setCookie(cname, cvalue, exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          var expires = "expires="+d.toUTCString();
+          document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
+         }
+
+        function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+          }
+          return "";
+        }
+
+        $('#news-update-popup-unsubscribe').change(function() {
+          setCookie("_tmnup", 1, 365);
+          MicroModal.close('modal-news-update-popup');
+        });
+
+        $(function(){
+          var intervalID;
+          var freqSecs = 60;
+          var _tmnupchk = parseInt(getCookie("_tmnup"));
+          if(_tmnupchk !== 1) {
+            intervalID = setInterval(function () {
+              $.get("/seo/checkNeueNewsStartseite/site/431029", function(data) {
+                if(data == 1 && document.getElementById('modal-news-update-popup')) {
+                  MicroModal.show('modal-news-update-popup');
+                  clearInterval(intervalID);
+                }
+              });
+            }, freqSecs*1000);
+          }
+        });
+	var loginUrl='/profil/login';
+	var onlyDE = '';
+	var onlyMobile = '';
+	var onlyTablet = '';
+	var getUserID = '';
+
+    function sendIvwData(typ) {
+        if(typ == 'tabelle') {
+            var iam_data = {
+"st":"transfer",
+"cp":"home_rest_t",
+"co":""
+}
+
+        }else if(typ == 'reiter') {
+            var iam_data = {
+"st":"transfer",
+"cp":"home_rest_r",
+"co":""
+}
+
+        }else if(typ == 'forum') {
+            var iam_data = {
+"st":"transfer",
+"cp":"home_rest_forum",
+"co":""
+}
+
+        }else {
+            var iam_data = {
+"st":"transfer",
+"cp":"home_rest_s",
+"co":""
+}
+
+        }
+        if(typeof IOMm === 'function') {
+            IOMm('pageview', { cp: iam_data.cp, co: iam_data.co });
+        }
+    }
+oddsServe("8b7ecddd3b6e5b2a65deb466d60355a7", -1);
+/*]]>*/
+</script>
+</body>
+
+</html>
